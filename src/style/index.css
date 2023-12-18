@@ -1,48 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 45px 100px;
-}
-
-ul {
-  display: flex;
-  gap: 20px;
-}
-
-ul a {
-  text-decoration: none;
-  color: #FF6060;
-}
-
-ul a:hover {
-  text-decoration: underline;
-}
-
-li {
-  list-style: none;
-}
-
-.image img {
-  color: blue;
-  width: 1240px;
-  height: 223px;
-  object-fit: cover;
-  border-radius: 25px;
-  filter: brightness(70%);
-}
-
-.image {
-  border-radius: 25px;
-  text-align: center;
-}
-
-.image h1 {
-  position: relative;
-  z-index: 2;
-  top: -180px;
-  color: white;
-  font-size: 48px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  max-width: 100%;
 }
 
 .container {
@@ -107,16 +69,88 @@ li {
   max-width: 100%;
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  max-width: 100%;
+}
+
 .error h1 {
-  color: #FF6060;
-  position: absolute;
-  left: 40%;
+  color: #ff6060;
   font-size: 280px;
   font-weight: 600;
 }
 
 .error h3 {
-  color: #FF6060;
+  color: #ff6060;
+  font-size: 36px;
+}
+
+.linkError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6060;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 40px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+
+.image img {
+  width: 1440px;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(70%);
+}
+
+.image {
+  border-radius: 25px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.image h1 {
+  position: relative;
+  z-index: 2;
+  top: -180px;
+  color: white;
+  font-size: 48px;
+}
+
+footer {
+  background-color: black;
+  height: 209px;
+}
+
+.imageFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 66px 463px 29px 463px;
 }
 
 /*# sourceMappingURL=index.css.map */

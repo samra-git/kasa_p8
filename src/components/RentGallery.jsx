@@ -11,7 +11,7 @@ const RentGallery = () => {
       
         {data.map((appart) => (
           <article key={data.id} className="imageContainer">
-            <Link >
+            <Link to="rent">
             <img src={appart.cover} alt={appart.title} />
             <div className="content"> {appart.title} </div>
             </Link>

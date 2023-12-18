@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
 
-$font-premium: 'Montserrat', sans-serif;
+$font-premium: "Montserrat", sans-serif;
 
-*{
-    font-family: $font-premium;
-    font-weight: 500;
-    max-width: 100%;
+* {
+  font-family: $font-premium;
+  font-weight: 500;
+  max-width: 100%;
+  // position: relative;
 }
 
-$color-premium: #FF6060;
+$color-premium: #ff6060;
