@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../layouts/Header";
-import Photo2 from "../components/Photo2";
+import Banner2 from "../components/Banner2";
 import Footer from "../layouts/Footer";
 
 const About = () => {
   return (
     <div>
       <Header />
-      <Photo2 />
+      <Banner2 />
       <Footer />
     </div>
   );

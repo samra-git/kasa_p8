@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../layouts/Header.jsx";
-import Photo1 from "../components/Photo1.jsx";
+import Banner1 from "../components/Banner1.jsx";
 import RentGallery from "../components/RentGallery.jsx";
 import Footer from "../layouts/Footer.jsx";
 
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Photo1 />
+      <Banner1 />
       <RentGallery />
       <Footer />
     </div>

@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
-import data  from "../data/db-kasa.json";
-import "../style/sass/main.scss";
+import dataBase from "../data/db-kasa.json";
+// import "../style/index.css";
 import { Link } from "react-router-dom";
+// import Accommodation from "../pages/Accommodation";
+import Card from "./Card";
 
 const RentGallery = () => {
-   
+  const [loc, setLoc] = useState([]);
+
+  useEffect(() => {
+    setLoc(dataBase);
+  }, []);
+
   return (
-    
     <div className="container">
-      
-        {data.map((appart) => (
-          <article key={data.id} className="imageContainer">
-            <Link to="rent">
-            <img src={appart.cover} alt={appart.title} />
-            <div className="content"> {appart.title} </div>
-            </Link>
-          </article>
-        ))}   
+      {loc.map((appart) => 
+        <Card key={appart.id} title={appart.title} id={appart.id} cover={appart.cover}/>
+        
+      )}
     </div>
-    
   );
 };
 

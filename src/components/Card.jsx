@@ -1,10 +1,20 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-const Card = () => {
+
+const Card = ({ id, cover, title }) => {
     return (
-        <div>
+        <article className="imageContainer" key={id} >
+            <Link to={"rent/" + id }  >
+                <div>
+                  <img src={cover} alt="photo" />  
+                </div>
             
-        </div>
+                <div className="content">
+                    <p>{title}</p>
+                </div>
+            </Link>
+          </article>
     );
 };
 

@@ -16,6 +16,10 @@ ul a {
 ul a:hover {
     text-decoration: underline;
 }
+
+ul a.active {
+    text-decoration: underline;
+}
 li {    
     list-style: none;
 }

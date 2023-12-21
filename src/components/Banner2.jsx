@@ -1,13 +1,13 @@
 import React from 'react';
-import photo1 from '../assets/littoral.png';
+import photo2 from '../assets/montagne.png'
 
-const Photo1 = () => {
+const Banner2 = () => {
     return (
         <div  className="image">
-            <img src= {photo1}  alt="littoral" />
+            <img src= {photo2}  alt="littoral" />
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
     );
 };
 
-export default Photo1;
+export default Banner2;
