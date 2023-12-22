@@ -1,0 +1,13 @@
+.host {
+    // border: 5px solid blue;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 25px;
+    gap:10px
+
+}
+
+.host img {
+    border-radius: 100%;
+    object-fit: cover;
+}

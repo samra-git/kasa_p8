@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
 .imageContainer {
   display: flex;
   flex-direction: column;
@@ -42,12 +41,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   max-width: 100%;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  max-width: 100%;
+  margin: 0;
 }
 
 .error h1 {
@@ -145,6 +139,125 @@ footer {
 
 .container a {
   text-decoration: none;
+}
+
+.slides {
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.slides img {
+  width: 1440px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.arrows {
+  position: relative;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 38%;
+  left: 5%;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid red;
+}
+@media (min-width: 2556px) {
+  .arrowLeft {
+    left: 15%;
+  }
+}
+
+.arrowRight {
+  position: absolute;
+  top: 38%;
+  right: 5%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.slidePage {
+  color: white;
+  position: absolute;
+  bottom: 38%;
+  left: 50%;
+}
+
+.containerAcc {
+  padding: 0 30px;
+  color: #ff6060;
+  margin-bottom: 50px;
+}
+
+aside {
+  width: 20%;
+  display: flex;
+  justify-content: right;
+}
+
+.hostRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+}
+
+.description {
+  width: 50%;
+}
+
+.title {
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.text {
+  padding: 5px;
+  background-color: #F6F6F6;
+}
+
+.equipments {
+  width: 50%;
+}
+
+.host {
+  display: flex;
+  margin-right: 30px;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.host img {
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.tag {
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  text-align: center;
+  gap: 10px;
+  width: auto;
+  padding: 3px 15px;
+  margin: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=index.css.map */

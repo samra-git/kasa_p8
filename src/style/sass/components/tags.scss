@@ -1,0 +1,19 @@
+.tag {
+    background-color: $color-premium;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    text-align: center;
+    gap: 10px;
+    width: auto;
+    padding: 3px 15px;
+    margin: 5px;
+
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+}

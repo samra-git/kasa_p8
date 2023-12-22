@@ -1,0 +1,48 @@
+.containerAcc {
+    padding: 0 30px;
+    color: $color-premium;
+    margin-bottom: 50px;
+
+
+}
+
+aside {
+    width: 20%;
+    display: flex;
+    justify-content: right;
+    // border: 5px solid blue;
+    
+}
+.hostRating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    display:flex;
+    gap:20px;
+
+ 
+}
+.description {
+    width: 50%;
+    // border-radius: 10px;
+    // margin: 0;
+    
+
+   
+}
+.title {
+    background-color: $color-premium;
+    color:$color-tertio;
+    border-radius: 5px;
+    padding: 5px;
+}
+.text {
+    padding: 5px;
+
+    background-color: $color-second;
+}
+.equipments {
+    width: 50%;
+}

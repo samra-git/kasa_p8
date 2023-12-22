@@ -1,6 +1,10 @@
-@import './card.scss';
+@import './components/card.scss';
 @import './base.scss';
-@import './page404.scss';
-@import './header.scss';
-@import './footer.scss';
-@import './rentGallery.scss'
+@import './pages/page404.scss';
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './components/rentGallery.scss';
+@import './components/carrousel.scss';
+@import './pages/Accommodation.scss';
+@import './components/host.scss';
+@import './components/tags.scss';
