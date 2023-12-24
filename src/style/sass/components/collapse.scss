@@ -1,0 +1,17 @@
+.arrowDown {
+    // border: 1px solid red;
+}
+
+.hideText {
+    display: none;
+}
+
+.titleArrow {
+    display: flex;
+    width: 100%;
+}
+.titleArrow img {
+    background-color: $color-primo;
+    border-radius: 0 5px 5px 0;
+
+}

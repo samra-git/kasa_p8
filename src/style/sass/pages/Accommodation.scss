@@ -1,6 +1,6 @@
 .containerAcc {
     padding: 0 30px;
-    color: $color-premium;
+    color: $color-primo;
     margin-bottom: 50px;
 
 
@@ -33,16 +33,21 @@ aside {
    
 }
 .title {
-    background-color: $color-premium;
+    background-color: $color-primo;
     color:$color-tertio;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     padding: 5px;
 }
 .text {
     padding: 5px;
-
+border-radius: 5px;
     background-color: $color-second;
 }
 .equipments {
     width: 50%;
+}
+
+.equip {
+    display: flex;
+    flex-direction: column;
 }

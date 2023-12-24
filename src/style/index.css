@@ -44,15 +44,22 @@
   margin: 0;
 }
 
+.error {
+  padding-bottom: 50px;
+}
+
 .error h1 {
   color: #ff6060;
   font-size: 280px;
   font-weight: 600;
+  text-align: center;
 }
 
 .error h3 {
   color: #ff6060;
   font-size: 36px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .linkError {
@@ -60,6 +67,7 @@
   justify-content: center;
   align-items: center;
   color: #ff6060;
+  padding-bottom: 50px;
 }
 
 .header {
@@ -216,17 +224,23 @@ aside {
 .title {
   background-color: #ff6060;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   padding: 5px;
 }
 
 .text {
   padding: 5px;
+  border-radius: 5px;
   background-color: #F6F6F6;
 }
 
 .equipments {
   width: 50%;
+}
+
+.equip {
+  display: flex;
+  flex-direction: column;
 }
 
 .host {
@@ -258,6 +272,20 @@ aside {
 .tags {
   display: flex;
   flex-direction: row;
+}
+
+.hideText {
+  display: none;
+}
+
+.titleArrow {
+  display: flex;
+  width: 100%;
+}
+
+.titleArrow img {
+  background-color: #ff6060;
+  border-radius: 0 5px 5px 0;
 }
 
 /*# sourceMappingURL=index.css.map */
