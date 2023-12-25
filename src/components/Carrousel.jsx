@@ -22,7 +22,7 @@ const Carrousel = ({ slides }) => {
   }
 
   return (
-    <div>
+    <div className="carrouselContain">
       <div className="slides">
         <img src={slides[currentSlide]} alt="" />
       </div>

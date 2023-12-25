@@ -1,10 +1,18 @@
+@import '../base.scss';
+
 .arrowDown {
     // border: 1px solid red;
+    transform: rotate(180deg);
+    transition: all 500ms;
 }
 
-.hideText {
-    display: none;
+.arrowDown:active {
+    // transition: all 500ms;
+    animation: rotateArrow 500ms;
+
 }
+
+
 
 .titleArrow {
     display: flex;
@@ -12,6 +20,10 @@
 }
 .titleArrow img {
     background-color: $color-primo;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
 
+}
+
+.title {
+    width: 100%;
 }

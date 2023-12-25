@@ -5,7 +5,7 @@ const ratingStars= [];
 
   for (let i = 0; i < 5; i++) {
 ratingStars.push(
-    <span key={i} className={i < rating ? 'filled' : ''}>
+    <span key={i} className={i < rating ? 'filled' : 'empty'}>
     <i className="fa-star fa-solid"></i>
     </span>
 )

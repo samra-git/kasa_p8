@@ -1,3 +1,13 @@
 .empty {
-// color:$color-tertio;
+color:$color-tertio;
 }
+
+.filled {
+    // color: $color-primo;
+    border: 1px solid $color-primo;
+    // height: 24px;
+    // width: 24px;
+}
+ .fa-star {
+    // display: flex;
+ }

@@ -26,15 +26,13 @@ const Accommodation = () => {
   const pictures = foundId && foundId.pictures;
   const list = foundId && foundId.equipments;
   console.log(list);
-  const equip = (list&& 
+  const equip = list && (
     <ul className="equip">
-    {list.map((item, index) => (
-    
-      <li key={index}>{item}</li>
-    
-  ))}
-  </ul>
-  )
+      {list.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
   console.log(equip);
 
   console.log(pictures);
@@ -44,18 +42,17 @@ const Accommodation = () => {
         <Header />
         <div className="containerAcc">
           <Carrousel slides={pictures} />
-
-          <div className="hostRating">
+          <aside className="hostRating">
+            <Host host={foundId.host} />
+            <Rating rating={foundId.rating} />{" "}
+          </aside>
+          <div>
             <div>
               <h1> {foundId.title}</h1>
               <h2>{foundId.location}</h2>
             </div>
-
-            <aside>
-              <Host host={foundId.host} />
-              <Rating rating={foundId.rating} />{" "}
-            </aside>
           </div>
+
           <div className="tags">
             {foundId.tags.map((tag, index) => (
               <Tags key={index} tags={tag} />
@@ -66,9 +63,7 @@ const Accommodation = () => {
               <Collapse title="Description" description={foundId.description} />
             </div>
             <div className="equipments">
-              <Collapse title="Equipements" description={equip}>
-                
-              </Collapse>
+              <Collapse title="Equipements" description={equip}></Collapse>
             </div>
           </div>
         </div>

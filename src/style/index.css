@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
 .imageContainer {
   display: flex;
   flex-direction: column;
@@ -44,6 +45,14 @@
   margin: 0;
 }
 
+@keyframes rotateArrow {
+  0% {
+    transform: rotate 180deg;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .error {
   padding-bottom: 50px;
 }
@@ -149,10 +158,14 @@ footer {
   text-decoration: none;
 }
 
+.carrouselContain {
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .slides {
   border-radius: 25px;
   text-align: center;
-  position: relative;
 }
 
 .slides img {
@@ -161,37 +174,54 @@ footer {
   object-fit: cover;
   border-radius: 25px;
 }
-
-.arrows {
-  position: relative;
+@media (min-width: 1500px) {
+  .slides img {
+    width: 2000px;
+  }
 }
 
 .arrowLeft {
   position: absolute;
   top: 38%;
-  left: 5%;
+  left: 2%;
   z-index: 1;
   cursor: pointer;
-  border: 1px solid red;
 }
-@media (min-width: 2556px) {
+@media (min-width: 1500px) {
   .arrowLeft {
-    left: 15%;
+    left: 3%;
+  }
+}
+@media (max-width: 768px) {
+  .arrowLeft {
+    height: 24px;
+    width: 24px;
   }
 }
 
 .arrowRight {
   position: absolute;
   top: 38%;
-  right: 5%;
+  right: 2%;
   z-index: 1;
   cursor: pointer;
+}
+@media (min-width: 1700px) {
+  .arrowRight {
+    right: 3%;
+  }
+}
+@media (max-width: 768px) {
+  .arrowRight {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .slidePage {
   color: white;
   position: absolute;
-  bottom: 38%;
+  bottom: 10%;
   left: 50%;
 }
 
@@ -200,11 +230,14 @@ footer {
   color: #ff6060;
   margin-bottom: 50px;
 }
+@media (min-width: 2000px) {
+  .containerAcc {
+    padding: 0 280px;
+  }
+}
 
 aside {
-  width: 20%;
-  display: flex;
-  justify-content: right;
+  float: right;
 }
 
 .hostRating {
@@ -215,6 +248,7 @@ aside {
 .details {
   display: flex;
   gap: 20px;
+  margin-top: 25px;
 }
 
 .description {
@@ -261,21 +295,42 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 10px;
   text-align: center;
   gap: 10px;
   width: auto;
   padding: 3px 15px;
-  margin: 5px;
 }
 
 .tags {
   display: flex;
   flex-direction: row;
+  margin-top: 25px;
+  gap: 8px;
 }
 
-.hideText {
-  display: none;
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  max-width: 100%;
+  margin: 0;
+}
+
+@keyframes rotateArrow {
+  0% {
+    transform: rotate 180deg;
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.arrowDown {
+  transform: rotate(180deg);
+  transition: all 500ms;
+}
+
+.arrowDown:active {
+  animation: rotateArrow 500ms;
 }
 
 .titleArrow {
@@ -285,7 +340,19 @@ aside {
 
 .titleArrow img {
   background-color: #ff6060;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.title {
+  width: 100%;
+}
+
+.empty {
+  color: #fff;
+}
+
+.filled {
+  border: 1px solid #ff6060;
 }
 
 /*# sourceMappingURL=index.css.map */
