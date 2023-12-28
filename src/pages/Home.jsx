@@ -6,7 +6,7 @@ import Footer from "../layouts/Footer.jsx";
 
 const Home = () => {
   return (
-    <div>
+    <div className="containerHome">
       <Header />
       <Banner1 />
       <RentGallery />

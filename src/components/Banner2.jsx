@@ -5,7 +5,7 @@ const Banner2 = () => {
     return (
         <div  className="image">
             <img src= {photo2}  alt="littoral" />
-            <h1>Chez vous, partout et ailleurs</h1>
+            
         </div>
     );
 };

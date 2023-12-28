@@ -5,17 +5,14 @@ const Collapse = ({ title, description }) => {
   const [down, setDown] = useState(false);
 
   return (
-    <div>
+    <div className="collapse">
       <div className="titleArrow">
-        <p className="title">{title}</p>
-        <img
-          src={arrowDown}
-          alt=""
-          className="arrowDown"
-          onClick={() => setDown(!down)}
-        />
+        <h4 className="title">{title}</h4>
+        <button  onClick={() => setDown(!down)}>
+          <img src={arrowDown} alt=""  className={down ? "arrowDown" : "arrowUp"}  />
+        </ button>
       </div>
-      <div className="text">{down && description}</div>
+      <div className={down ? "textOn" : "textOff"}>{down && description}</div>
     </div>
   );
 };

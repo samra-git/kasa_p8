@@ -7,7 +7,7 @@ import Collapse from "../components/Collapse";
 
 const About = () => {
   return (
-    <div>
+    <div className="containerAbout">
       <Header />
       <Banner2 />
       <Garanties />

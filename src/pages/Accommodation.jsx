@@ -18,14 +18,14 @@ const Accommodation = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    console.log(dataBase);
+    // console.log(dataBase);
     setGetCard(dataBase);
   }, []);
   const foundId = getCard.find((item) => item.id === id);
-  console.log(foundId);
+  // console.log(foundId);
   const pictures = foundId && foundId.pictures;
   const list = foundId && foundId.equipments;
-  console.log(list);
+  // console.log(list);
   const equip = list && (
     <ul className="equip">
       {list.map((item, index) => (
@@ -33,23 +33,23 @@ const Accommodation = () => {
       ))}
     </ul>
   );
-  console.log(equip);
+  // console.log(equip);
 
-  console.log(pictures);
+  // console.log(pictures);
   if (foundId) {
     return (
-      <div>
+      <div className="containerAccomodation">
         <Header />
         <div className="containerAcc">
           <Carrousel slides={pictures} />
-          <aside className="hostRating">
-            <Host host={foundId.host} />
-            <Rating rating={foundId.rating} />{" "}
-          </aside>
-          <div>
+          <div className="titleHostRating">
             <div>
               <h1> {foundId.title}</h1>
               <h2>{foundId.location}</h2>
+            </div>
+            <div className="hostRating">
+              <Host host={foundId.host} />
+              <Rating rating={foundId.rating} />
             </div>
           </div>
 

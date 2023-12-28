@@ -1,14 +1,67 @@
 footer {
   background-color: black;
   height: 209px;
+  width: 100%;
+  max-width: 1440px;
+  // overflow: hidden;
+  display: flex;
+  justify-content: center;
+  // margin: 0 30px;
+  // padding: 0 30px;
+  // overflow: hidden;
+
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (max-width:768px) {
+    max-width: 768px;
+  }
+
+
   
 }
 
 .imageFooter {
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
   padding: 66px 463px 29px 463px;
+
+  @media (max-width:768px) {
+    background-color: inherit;
+    padding: 66px 80px 58px 81px;
+
+  }
+
+.logoNoneMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  & img {
+    padding: 0 30px;
+    object-fit: cover;
+    margin:auto;
+  }
+  @media (max-width:768px) {
+    
+    display: none;
+  }
+}
+
+  
+}
+
+.logoFooterMobile {
+  display: none;
+  object-fit: cover;
+  @media (max-width:768px) {
+    display: block;
+  }
+
 }

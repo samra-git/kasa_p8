@@ -1,13 +1,31 @@
 .empty {
-color:$color-tertio;
+  color: $color-second;
 }
 
 .filled {
-    // color: $color-primo;
-    border: 1px solid $color-primo;
-    // height: 24px;
-    // width: 24px;
+  color: $color-primo;
+  // border: 1px solid green;
 }
- .fa-star {
-    // display: flex;
- }
+.fa-star {
+//   position: absolute;
+width: 24px;
+height: 24px;
+}
+
+.stars {
+    // position: relative;
+// height: 100px;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  @media (max-width:768px) {
+    font-size: 18px;
+    justify-content: inherit;
+    align-items: center;
+  }
+
+    
+}
