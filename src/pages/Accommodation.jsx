@@ -3,22 +3,18 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
-import RentGallery from "../components/RentGallery";
-// import CardAcc from "../components/CardAcc";
 import dataBase from "../data/db-kasa.json";
 import Carrousel from "../components/Carrousel";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
-import Equipments from "../components/Equipments";
 
 const Accommodation = () => {
   const [getCard, setGetCard] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
-    // console.log(dataBase);
     setGetCard(dataBase);
   }, []);
   const foundId = getCard.find((item) => item.id === id);

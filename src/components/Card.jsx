@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ id, cover, title }) => {
     return (
-        <article className="imageContainer" key={id} >
+        <div className="imageContainer" key={id} >
             <Link to={"rent/" + id }  >
                 <div>
                   <img src={cover} alt="photo" />  
@@ -14,7 +14,7 @@ const Card = ({ id, cover, title }) => {
                     <p>{title}</p>
                 </div>
             </Link>
-          </article>
+          </div>
     );
 };
 

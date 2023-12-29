@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
-
 $font-premium: "Montserrat", sans-serif;
 
 * {
@@ -15,15 +14,18 @@ $font-premium: "Montserrat", sans-serif;
 }
 
 $color-primo: #ff6060;
-$color-second: #F6F6F6;
+$color-second: #f6f6f6;
 $color-tertio: #fff;
 
 @keyframes textDown {
-  0% {transform: translateY(0)}
-
-  100%{transform: translateY(30px);
-    border-radius: 0 5px 5px 0;
-  
+  0% {
+    transform: translateY(-1px);
+    opacity: 0;
   }
-  
+
+  100% {
+    transform: translateY(0px);
+    opacity:1;
+    // border-radius: 0 5px 5px 0;
+  }
 }

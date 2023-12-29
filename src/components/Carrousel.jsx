@@ -26,15 +26,15 @@ const Carrousel = ({ slides }) => {
       <div className="slides">
         <img src={slides[currentSlide]} alt="" />
       </div>
-      <div className="slidePage">
+      <div className={slides.length > 1 ? "slidePage" : "slideNone"}>
         {currentSlide + 1} / {slides.length}
       </div>
 
-      <div className="arrowLeft" onClick={handleClickLeft}>
+      <div className={slides.length > 1 ? "arrowLeft":"slideNone"} onClick={handleClickLeft}>
         <img src={left} alt="arrow left" />
       </div>
 
-      <div className="arrowRight" onClick={handleClickRight}>
+      <div className={slides.length > 1 ? "arrowRight":"slideNone"} onClick={handleClickRight}>
         <img src={right} alt="arrow right" />
       </div>
     </div>

@@ -5,7 +5,7 @@ import Footer from "../layouts/Footer";
 
 const Page404 = () => {
   return (
-    <div>
+    <div className="containerError">
       <Header />
       <div className="error">
         <h1>404</h1>

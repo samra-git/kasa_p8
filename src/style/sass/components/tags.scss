@@ -10,7 +10,11 @@
     width: auto;
     padding: 3px 15px;
     height: 25px;
+    font-size: 18px;
     // margin: 5px;
+    @media (max-width:768px) {
+        font-size: 10px;
+    }
 
 }
 
