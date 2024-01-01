@@ -39,6 +39,12 @@ justify-content: space-between;
 
 @media (max-width:768px) {
   flex-direction: column;
+  & h1 {
+    font-size: 18px;
+  }
+  & h2 {
+    font-size: 14px;
+  }
 }
 }
 
@@ -50,6 +56,11 @@ justify-content: space-between;
 
   @media (max-width: 768px) {
     flex-direction: row-reverse;
+  }
+
+  @media (max-width:360px) {
+    justify-content: center;
+
   }
 }
 

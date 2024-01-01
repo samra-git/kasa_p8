@@ -3,12 +3,9 @@ footer {
   height: 209px;
   width: 100%;
   max-width: 1440px;
-  // overflow: hidden;
   display: flex;
   justify-content: center;
-  // margin: 0 30px;
-  // padding: 0 30px;
-  // overflow: hidden;
+  
 
   @media (max-width: 1024px) {
     max-width: 1024px;
@@ -49,7 +46,7 @@ footer {
     margin:auto;
   }
   @media (max-width:768px) {
-    
+    margin-bottom: 0;
     display: none;
   }
 }
@@ -60,8 +57,13 @@ footer {
 .logoFooterMobile {
   display: none;
   object-fit: cover;
+  margin-bottom: 10px;
+  height: 200px;
+  
   @media (max-width:768px) {
     display: block;
+    
+    
   }
 
 }

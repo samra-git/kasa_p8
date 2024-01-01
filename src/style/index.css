@@ -182,6 +182,11 @@ ul a.active {
 li {
   list-style: none;
 }
+@media (max-width: 768px) {
+  li {
+    text-transform: uppercase;
+  }
+}
 
 footer {
   background-color: black;
@@ -230,6 +235,7 @@ footer {
 }
 @media (max-width: 768px) {
   .imageFooter .logoNoneMobile {
+    margin-bottom: 0;
     display: none;
   }
 }
@@ -237,6 +243,8 @@ footer {
 .logoFooterMobile {
   display: none;
   object-fit: cover;
+  margin-bottom: 10px;
+  height: 200px;
 }
 @media (max-width: 768px) {
   .logoFooterMobile {
@@ -382,6 +390,12 @@ footer {
   .titleHostRating {
     flex-direction: column;
   }
+  .titleHostRating h1 {
+    font-size: 18px;
+  }
+  .titleHostRating h2 {
+    font-size: 14px;
+  }
 }
 
 .hostRating {
@@ -392,6 +406,11 @@ footer {
 @media (max-width: 768px) {
   .hostRating {
     flex-direction: row-reverse;
+  }
+}
+@media (max-width: 360px) {
+  .hostRating {
+    justify-content: center;
   }
 }
 
@@ -454,6 +473,7 @@ footer {
 @media (max-width: 768px) {
   .host h3 {
     width: 100%;
+    font-size: 12px;
   }
 }
 
@@ -567,6 +587,11 @@ footer {
   background-color: #f6f6f6;
   animation: textDown 500ms;
 }
+@media (max-width: 768px) {
+  .textOn {
+    font-size: 13px;
+  }
+}
 
 .textOff {
   transition: all 500ms ease;
@@ -598,6 +623,12 @@ footer {
     font-size: 18px;
     justify-content: inherit;
     align-items: center;
+  }
+}
+@media (max-width: 360px) {
+  .stars {
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 }
 

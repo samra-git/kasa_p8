@@ -41,4 +41,8 @@ ul a.active {
 }
 li {
   list-style: none;
+
+  @media (max-width:768px) {
+    text-transform: uppercase;
+  }
 }
