@@ -13,12 +13,20 @@ const RentGallery = () => {
   }, []);
 
   return (
-    <div className="container">
-      {loc.map((appart) => 
-        <Card key={appart.id} title={appart.title} id={appart.id} cover={appart.cover}/>
-        
-      )}
-    </div>
+    
+      <div className="contain">
+        <div className="container">
+        {loc.map((appart) => (
+          <Card
+            key={appart.id}
+            title={appart.title}
+            id={appart.id}
+            cover={appart.cover}
+          />
+        ))}
+        </div>
+      </div>
+    
   );
 };
 

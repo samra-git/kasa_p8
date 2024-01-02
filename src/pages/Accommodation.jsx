@@ -9,6 +9,7 @@ import Host from "../components/Host";
 import Rating from "../components/Rating";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
+import Page404 from "./Page404";
 
 const Accommodation = () => {
   const [getCard, setGetCard] = useState([]);
@@ -17,8 +18,12 @@ const Accommodation = () => {
   useEffect(() => {
     setGetCard(dataBase);
   }, []);
+
+
+
+  
   const foundId = getCard.find((item) => item.id === id);
-  // console.log(foundId);
+  console.log(foundId);
   const pictures = foundId && foundId.pictures;
   const list = foundId && foundId.equipments;
   // console.log(list);
@@ -66,6 +71,8 @@ const Accommodation = () => {
         <Footer />
       </div>
     );
+  } else {
+    return <Page404 />
   }
 };
 

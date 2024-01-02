@@ -185,6 +185,7 @@ li {
 @media (max-width: 768px) {
   li {
     text-transform: uppercase;
+    font-size: 9px;
   }
 }
 
@@ -252,13 +253,18 @@ footer {
   }
 }
 
+.contain {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   background-color: #F6F6F6;
-  padding: 30px;
+  padding: 50px;
   margin: 50px;
   border-radius: 25px;
 }
